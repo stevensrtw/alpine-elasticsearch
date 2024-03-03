@@ -1,4 +1,4 @@
-![es-logo](https://raw.githubusercontent.com/stevensrtw/docker-elasticsearch-alpine/master/es-logo.png)
+![es-logo](https://cdn.worldvectorlogo.com/logos/elasticsearch.svg)
 
 # docker-elasticsearch-alpine
 
