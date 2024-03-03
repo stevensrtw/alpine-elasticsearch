@@ -24,7 +24,7 @@ Alpine Linux based [Elasticsearch](https://www.elastic.co/products/elasticsearch
 Compare Image Sizes:
 
 * official elasticsearch = 791.6 MB
-* stevensrtw/elasticsearch = 447.28 MB
+* stevensrtw/elasticsearch = 416 MB
 
 **version is 518 MB smaller !**
 
@@ -36,17 +36,14 @@ Compare Image Sizes:
 
 ``` bash
 REPOSITORY               TAG                 SIZE
-stevensrtw/elasticsearch   latest              1.02GB
-stevensrtw/elasticsearch   8.1                 1.02GB
-stevensrtw/elasticsearch   8.0                 1.02GB
-stevensrtw/elasticsearch   7.17                411MB
+stevensrtw/elasticsearch-7.17.18   latest                416MB
 
 ```
 
 ## Getting Started
 
 ``` bash
-$ docker run -d --name elastic -p 9200:9200 stevensrtw/elasticsearch
+$ docker run -d --name elastic -p 9200:9200 stevensrtw/elasticsearch-7.17.18
 ```
 
 ## Documentation
