@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:latest
 
 LABEL maintainer "https://github.com/stevensrtw"
 
