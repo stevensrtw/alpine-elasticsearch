@@ -35,7 +35,7 @@ Compare Image Sizes:
 ## Image Tags
 
 ``` bash
-REPOSITORY               TAG                 SIZE
+REPOSITORY                           TAG                 SIZE
 stevensrtw/elasticsearch-7.17.18   latest                416MB
 
 ```
