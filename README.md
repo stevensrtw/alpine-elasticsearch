@@ -1,4 +1,4 @@
-![es-logo](https://cdn.worldvectorlogo.com/logos/elasticsearch.svg)
+![es-logo](https://cdn.iconscout.com/icon/free/png-256/free-elastic-283142.png?f=webp&w=256)
 
 # docker-elasticsearch-alpine
 
