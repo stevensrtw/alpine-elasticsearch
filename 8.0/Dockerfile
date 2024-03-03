@@ -1,6 +1,6 @@
 FROM alpine:3.15
 
-LABEL maintainer "https://github.com/blacktop"
+LABEL maintainer "https://github.com/stevensrtw"
 
 RUN apk add --no-cache openjdk17-jre-headless su-exec
 
