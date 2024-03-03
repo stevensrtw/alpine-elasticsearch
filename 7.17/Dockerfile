@@ -1,10 +1,10 @@
 FROM alpine:latest
 
-LABEL maintainer "https://github.com/blacktop"
+LABEL maintainer "https://github.com/stevensrtw"
 
 RUN apk add --no-cache openjdk11-jre-headless su-exec
 
-ENV VERSION 7.17.2
+ENV VERSION 7.17.18
 ENV DOWNLOAD_URL "https://artifacts.elastic.co/downloads/elasticsearch"
 ENV ES_TARBAL "${DOWNLOAD_URL}/elasticsearch-${VERSION}-no-jdk-linux-x86_64.tar.gz"
 ENV ES_TARBALL_ASC "${DOWNLOAD_URL}/elasticsearch-${VERSION}-no-jdk-linux-x86_64.tar.gz.asc"
@@ -18,9 +18,6 @@ RUN apk add --no-cache -t .build-deps wget ca-certificates gnupg openssl \
   && cd /tmp \
   && echo "===> Install Elasticsearch..." \
   && wget --progress=bar:force -O elasticsearch.tar.gz "$ES_TARBAL"; \
-  if [ "$ES_TARBALL_SHA" ]; then \
-  echo "$ES_TARBALL_SHA *elasticsearch.tar.gz" | sha512sum -c -; \
-  fi; \
   if [ "$ES_TARBALL_ASC" ]; then \
   wget --progress=bar:force -O elasticsearch.tar.gz.asc "$ES_TARBALL_ASC"; \
   export GNUPGHOME="$(mktemp -d)"; \
