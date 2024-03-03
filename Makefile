@@ -1,5 +1,5 @@
-REPO=blacktop/elasticsearch
-ORG=blacktop
+REPO=stevensrtw/elasticsearch
+ORG=stevensrtw
 NAME=elasticsearch
 # build info
 BUILD ?=$(shell cat LATEST)

@@ -6,7 +6,7 @@ services:
   #############################
   master:
     restart: unless-stopped
-    image: blacktop/elasticsearch
+    image: stevensrtw/elasticsearch
     command: master
     ulimits:
       memlock:
@@ -26,7 +26,7 @@ services:
   ####################################
   client:
     restart: unless-stopped
-    image: blacktop/elasticsearch:kopf
+    image: stevensrtw/elasticsearch:kopf
     command: client
     ports:
       - "9200:9200"
@@ -48,7 +48,7 @@ services:
   ###########################
   data:
     restart: unless-stopped
-    image: blacktop/elasticsearch
+    image: stevensrtw/elasticsearch
     environment:
       - ES_JAVA_OPTS=-Xms2g -Xmx2g
     mem_limit: 4g

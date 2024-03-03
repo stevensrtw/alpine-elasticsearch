@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   elasticsearch:
-    image: blacktop/elasticsearch:7.10
+    image: stevensrtw/elasticsearch:7.16
     container_name: elasticsearch
     hostname: elasticsearch
     environment:
